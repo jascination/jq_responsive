@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	// First, wrap the entire body in 3 divs. This is important for CSS specificity, so that the .row-fluid and .span styles override any user-defined styles
 	
-	$('body div:first-child').wrap('<div id="responsiveWrap1" class="responsive-wrap" />').wrap('<div id="responsiveWrap2" class="responsive-wrap" />').wrap('<div id="responsiveWrap3" class="responsive-wrap" />');
+	$('body').wrapInner('<div id="responsiveWrap3" class="responsive-wrap" />').wrapInner('<div id="responsiveWrap2" class="responsive-wrap" />').wrapInner('<div id="responsiveWrap1" class="responsive-wrap" />');
 	
 	
 	// Make all images responsive
